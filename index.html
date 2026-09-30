@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Puran Bhagat Nivas — Premium Living, Peaceful Lifestyle near Darbar Bhagat Village, Majhowlia, Bhanchak, Bettiah, Bihar.">
+<title>Puran Bhagat Nivas | Premium Living</title>
+<style>
+:root{
+  --navy:#07182d;
+  --navy2:#102943;
+  --gold:#c59635;
+  --gold2:#e0b85a;
+  --cream:#faf7f0;
+  --white:#fff;
+  --text:#1c2633;
+  --muted:#687384;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--cream);line-height:1.6}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:20;background:rgba(7,24,45,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(224,184,90,.35)}
+.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:700;letter-spacing:.4px}
+.brand img{width:54px;height:54px;object-fit:contain;border-radius:50%;background:#fff}
+.brand span{font-size:18px}
+nav{display:flex;gap:25px;color:#fff;font-size:14px}
+nav a:hover{color:var(--gold2)}
+.menu{display:none;color:#fff;font-size:28px}
+.hero{min-height:650px;display:flex;align-items:center;position:relative;overflow:hidden;background:
+ radial-gradient(circle at 85% 25%,rgba(197,150,53,.24),transparent 30%),
+ linear-gradient(135deg,#061629 0%,#0d2743 58%,#183b57 100%);color:#fff}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,16,31,.72),rgba(5,16,31,.18));pointer-events:none}
+.hero-inner{position:relative;z-index:2;padding:75px 0;max-width:720px}
+.kicker{display:inline-block;border:1px solid rgba(224,184,90,.7);color:#f1cd78;border-radius:30px;padding:7px 15px;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:22px}
+h1{font-family:Georgia,serif;font-size:clamp(44px,7vw,82px);line-height:1.02;margin-bottom:18px}
+.hero h1 span{color:var(--gold2)}
+.hero p{font-size:19px;max-width:620px;color:#e7edf4;margin-bottom:30px}
+.buttons{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:8px;font-weight:700;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#fff}
+.btn-gold:hover{background:var(--gold2)}
+.btn-outline{border-color:rgba(255,255,255,.5);color:#fff}
+.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero-card{position:absolute;right:5%;bottom:60px;z-index:2;width:300px;padding:22px;border-radius:16px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px)}
+.hero-card strong{display:block;color:#f1cd78;margin-bottom:6px}
+section{padding:82px 0}
+.section-title{text-align:center;margin-bottom:42px}
+.eyebrow{color:var(--gold);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
+h2{font-family:Georgia,serif;font-size:clamp(30px,4vw,46px);color:var(--navy);margin:7px 0 10px}
+.section-title p{color:var(--muted);max-width:680px;margin:auto}
+.about{background:#fff}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.about-copy p{margin:15px 0;color:#596575}
+.quote{border-left:4px solid var(--gold);padding:18px 20px;background:var(--cream);font-family:Georgia,serif;font-size:22px;color:var(--navy)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:#fff;border:1px solid #e8e4db;border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(7,24,45,.06)}
+.icon{width:50px;height:50px;border-radius:12px;display:grid;place-items:center;background:#f4ead2;color:var(--gold);font-size:23px;margin-bottom:17px}
+.card h3{color:var(--navy);margin-bottom:8px}
+.card p{color:var(--muted);font-size:14px}
+.highlight{background:linear-gradient(135deg,#0a1d34,#173d59);color:#fff}
+.highlight h2{color:#fff}
+.highlight .section-title p{color:#d9e2eb}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
+.stat{padding:25px;text-align:center;border:1px solid rgba(255,255,255,.15);border-radius:14px;background:rgba(255,255,255,.05)}
+.stat b{font-size:30px;color:#f0c86b;display:block}
+.location{background:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.contact-box{background:var(--cream);border:1px solid #e8e4db;border-radius:16px;padding:28px}
+.contact-row{display:flex;gap:14px;margin:17px 0}
+.contact-row b{display:block;color:var(--navy)}
+.contact-row span{color:var(--muted);font-size:14px}
+.map{min-height:330px;border-radius:16px;background:linear-gradient(135deg,#e8dfca,#f8f5ed);display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;border:1px solid #ded6c5}
+.map h3{font-family:Georgia,serif;color:var(--navy);font-size:28px}
+footer{background:#061629;color:#cbd5df;padding:35px 0}
+.footer-flex{display:flex;justify-content:space-between;gap:20px;align-items:center}
+.footer-brand{color:#fff;font-family:Georgia,serif;font-size:23px}
+footer small{color:#92a0af}
+@media(max-width:800px){
+ nav{display:none}.menu{display:block}
+ .hero{min-height:620px}.hero-card{position:relative;right:auto;bottom:auto;margin-top:30px;width:100%;max-width:400px}
+ .hero-inner{padding:65px 0}.hero p{font-size:17px}
+ .about-grid,.contact-grid{grid-template-columns:1fr}
+ .cards{grid-template-columns:1fr}
+ .stats{grid-template-columns:1fr}
+ .footer-flex{flex-direction:column;text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#home">
+      <img src="logo.png" alt="Puran Bhagat Nivas logo">
+      <span>Puran Bhagat Nivas</span>
+    </a>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#features">Features</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="menu">☰</div>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="container hero-inner">
+    <div class="kicker">Premium Residential Living</div>
+    <h1>Puran <span>Bhagat</span> Nivas</h1>
+    <p>A refined residential destination designed around comfort, peace and a welcoming lifestyle near Bettiah, Bihar.</p>
+    <div class="buttons">
+      <a class="btn btn-gold" href="tel:+918709012272">Call Now</a>
+      <a class="btn btn-outline" href="tel:+919608486141">Enquiry</a>
+      <a class="btn btn-outline" href="mailto:rajvivek1622@gmail.com">Email Us</a>
+    </div>
+    <div class="hero-card">
+      <strong>Premium Living, Peaceful Lifestyle</strong>
+      <span>Near Darbar Bhagat Village, Majhowlia, Bhanchak, near Bettiah, Bihar — 845454</span>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container about-grid">
+    <div class="about-copy">
+      <div class="eyebrow">Welcome Home</div>
+      <h2>A place to live with comfort and peace.</h2>
+      <p>Puran Bhagat Nivas is presented as a premium residential destination with a calm, elegant identity and a location close to Bettiah.</p>
+      <p>The website is designed to give visitors a clear first impression, easy enquiry access and essential location information.</p>
+    </div>
+    <div class="quote">“Premium Living, Peaceful Lifestyle”</div>
+  </div>
+</section>
+
+<section id="features">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Why Puran Bhagat Nivas</div>
+      <h2>Designed for a better everyday</h2>
+      <p>A clean and premium presentation for residents, visitors and enquiries.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">⌂</div><h3>Residential Comfort</h3><p>A welcoming environment focused on comfortable everyday living.</p></div>
+      <div class="card"><div class="icon">✦</div><h3>Premium Identity</h3><p>An elegant gold-and-navy visual identity inspired by the Puran Bhagat Nivas logo.</p></div>
+      <div class="card"><div class="icon">⌖</div><h3>Convenient Location</h3><p>Located near Darbar Bhagat Village, Majhowlia, Bhanchak, near Bettiah, Bihar.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="highlight">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">At a Glance</div>
+      <h2>Everything you need to enquire</h2>
+      <p>Use the contact options below for property-related enquiries and information.</p>
+    </div>
+    <div class="stats">
+      <div class="stat"><b>845454</b><span>PIN Code</span></div>
+      <div class="stat"><b>24/7</b><span>Enquiry Contact</span></div>
+      <div class="stat"><b>Near Bettiah</b><span>West Champaran, Bihar</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="location" id="location">
+  <div class="container">
+    <div class="section-title">
+      <div class="eyebrow">Find Us</div>
+      <h2>Our Location</h2>
+      <p>Near Darbar Bhagat Village, Majhowlia, Bhanchak, near Bettiah, Bihar — 845454.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="map">
+        <div>
+          <h3>📍 Puran Bhagat Nivas</h3>
+          <p>Near Darbar Bhagat Village<br>Majhowlia, Bhanchak<br>Near Bettiah, Bihar — 845454</p>
+          <br>
+          <a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Puran+Bhagat+Nivas+Near+Darbar+Bhagat+Village+Majhowlia+Bhanchak+Bettiah+Bihar+845454">Open in Google Maps</a>
+        </div>
+      </div>
+      <div class="contact-box" id="contact">
+        <div class="eyebrow">Get in Touch</div>
+        <h2 style="font-size:34px">Enquire today</h2>
+        <div class="contact-row"><div>📞</div><div><b>Phone</b><span>8709012272</span></div></div>
+        <div class="contact-row"><div>💬</div><div><b>Enquiry</b><span>9608486141</span></div></div>
+        <div class="contact-row"><div>✉</div><div><b>Email</b><span>rajvivek1622@gmail.com</span></div></div>
+        <div class="buttons" style="margin-top:25px">
+          <a class="btn btn-gold" href="tel:+919608486141">Enquire Now</a>
+          <a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/919608486141?text=Hello%20Puran%20Bhagat%20Nivas%2C%20I%20want%20to%20make%20an%20enquiry.">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-flex">
+    <div>
+      <div class="footer-brand">Puran Bhagat Nivas</div>
+      <small>Premium Living, Peaceful Lifestyle</small>
+    </div>
+    <small>© 2026 Puran Bhagat Nivas. All rights reserved.</small>
+  </div>
+</footer>
+</body>
+</html>
