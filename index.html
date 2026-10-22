@@ -3,211 +3,128 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Puran Bhagat Nivas — Premium Living, Peaceful Lifestyle near Darbar Bhagat Village, Majhowlia, Bhanchak, Bettiah, Bihar.">
-<title>Puran Bhagat Nivas | Premium Living</title>
+<meta name="theme-color" content="#101b2a">
+<meta name="description" content="Puran Bhagat Nivas — premium living, peaceful lifestyle in Bhanachak, Majhowlia, Bettiah, West Champaran, Bihar.">
+<title>Puran Bhagat Nivas | Premium Living, Peaceful Lifestyle</title>
 <style>
-:root{
-  --navy:#07182d;
-  --navy2:#102943;
-  --gold:#c59635;
-  --gold2:#e0b85a;
-  --cream:#faf7f0;
-  --white:#fff;
-  --text:#1c2633;
-  --muted:#687384;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Arial,Helvetica,sans-serif;color:var(--text);background:var(--cream);line-height:1.6}
-a{text-decoration:none;color:inherit}
-.container{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(7,24,45,.96);backdrop-filter:blur(12px);border-bottom:1px solid rgba(224,184,90,.35)}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:700;letter-spacing:.4px}
-.brand img{width:54px;height:54px;object-fit:contain;border-radius:50%;background:#fff}
-.brand span{font-size:18px}
-nav{display:flex;gap:25px;color:#fff;font-size:14px}
-nav a:hover{color:var(--gold2)}
-.menu{display:none;color:#fff;font-size:28px}
-.hero{min-height:650px;display:flex;align-items:center;position:relative;overflow:hidden;background:
- radial-gradient(circle at 85% 25%,rgba(197,150,53,.24),transparent 30%),
- linear-gradient(135deg,#061629 0%,#0d2743 58%,#183b57 100%);color:#fff}
-.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(5,16,31,.72),rgba(5,16,31,.18));pointer-events:none}
-.hero-inner{position:relative;z-index:2;padding:75px 0;max-width:720px}
-.kicker{display:inline-block;border:1px solid rgba(224,184,90,.7);color:#f1cd78;border-radius:30px;padding:7px 15px;font-size:12px;letter-spacing:2px;text-transform:uppercase;margin-bottom:22px}
-h1{font-family:Georgia,serif;font-size:clamp(44px,7vw,82px);line-height:1.02;margin-bottom:18px}
-.hero h1 span{color:var(--gold2)}
-.hero p{font-size:19px;max-width:620px;color:#e7edf4;margin-bottom:30px}
-.buttons{display:flex;gap:13px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:8px;font-weight:700;border:1px solid transparent}
-.btn-gold{background:var(--gold);color:#fff}
-.btn-gold:hover{background:var(--gold2)}
-.btn-outline{border-color:rgba(255,255,255,.5);color:#fff}
-.btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08)}
-.hero-card{position:absolute;right:5%;bottom:60px;z-index:2;width:300px;padding:22px;border-radius:16px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px)}
-.hero-card strong{display:block;color:#f1cd78;margin-bottom:6px}
-section{padding:82px 0}
-.section-title{text-align:center;margin-bottom:42px}
-.eyebrow{color:var(--gold);font-size:12px;letter-spacing:2px;text-transform:uppercase;font-weight:700}
-h2{font-family:Georgia,serif;font-size:clamp(30px,4vw,46px);color:var(--navy);margin:7px 0 10px}
-.section-title p{color:var(--muted);max-width:680px;margin:auto}
-.about{background:#fff}
-.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
-.about-copy p{margin:15px 0;color:#596575}
-.quote{border-left:4px solid var(--gold);padding:18px 20px;background:var(--cream);font-family:Georgia,serif;font-size:22px;color:var(--navy)}
-.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.card{background:#fff;border:1px solid #e8e4db;border-radius:16px;padding:28px;box-shadow:0 10px 30px rgba(7,24,45,.06)}
-.icon{width:50px;height:50px;border-radius:12px;display:grid;place-items:center;background:#f4ead2;color:var(--gold);font-size:23px;margin-bottom:17px}
-.card h3{color:var(--navy);margin-bottom:8px}
-.card p{color:var(--muted);font-size:14px}
-.highlight{background:linear-gradient(135deg,#0a1d34,#173d59);color:#fff}
-.highlight h2{color:#fff}
-.highlight .section-title p{color:#d9e2eb}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:30px}
-.stat{padding:25px;text-align:center;border:1px solid rgba(255,255,255,.15);border-radius:14px;background:rgba(255,255,255,.05)}
-.stat b{font-size:30px;color:#f0c86b;display:block}
-.location{background:#fff}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
-.contact-box{background:var(--cream);border:1px solid #e8e4db;border-radius:16px;padding:28px}
-.contact-row{display:flex;gap:14px;margin:17px 0}
-.contact-row b{display:block;color:var(--navy)}
-.contact-row span{color:var(--muted);font-size:14px}
-.map{min-height:330px;border-radius:16px;background:linear-gradient(135deg,#e8dfca,#f8f5ed);display:flex;align-items:center;justify-content:center;text-align:center;padding:30px;border:1px solid #ded6c5}
-.map h3{font-family:Georgia,serif;color:var(--navy);font-size:28px}
-footer{background:#061629;color:#cbd5df;padding:35px 0}
-.footer-flex{display:flex;justify-content:space-between;gap:20px;align-items:center}
-.footer-brand{color:#fff;font-family:Georgia,serif;font-size:23px}
-footer small{color:#92a0af}
-@media(max-width:800px){
- nav{display:none}.menu{display:block}
- .hero{min-height:620px}.hero-card{position:relative;right:auto;bottom:auto;margin-top:30px;width:100%;max-width:400px}
- .hero-inner{padding:65px 0}.hero p{font-size:17px}
- .about-grid,.contact-grid{grid-template-columns:1fr}
- .cards{grid-template-columns:1fr}
- .stats{grid-template-columns:1fr}
- .footer-flex{flex-direction:column;text-align:center}
-}
+:root{--navy:#101b2a;--navy2:#1c2b3d;--gold:#c69a42;--cream:#f8f5ee;--ink:#202a36;--muted:#687383;--white:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}
+header{position:sticky;top:0;z-index:10;background:rgba(16,27,42,.97);color:#fff;box-shadow:0 4px 18px #0002}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;letter-spacing:.4px}.brand img{width:52px;height:52px;object-fit:contain;background:#fff;border-radius:50%}.brand span{display:block;font-size:14px}.brand small{display:block;color:#e2c27e;font-size:10px;letter-spacing:1.6px;font-weight:600}
+nav{display:flex;align-items:center;gap:20px;font-size:13px}nav a:hover{color:#e4bf70}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#101b2a;padding:12px 18px;border-radius:6px;font-weight:800;border:0;cursor:pointer}.nav-cta{padding:9px 13px}
+.hero{background:linear-gradient(90deg,rgba(9,18,30,.88),rgba(9,18,30,.45)),url('assets/property.jpg') center 58%/cover;min-height:570px;display:flex;align-items:center;color:white}
+.hero-content{max-width:680px;padding:76px 0}.eyebrow{color:#e5c47d;text-transform:uppercase;font-size:12px;font-weight:800;letter-spacing:3px}
+h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,72px);line-height:1.05;margin:14px 0 18px;font-weight:600}.hero p{max-width:580px;color:#f1f1f1;font-size:17px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.btn-outline{display:inline-flex;align-items:center;justify-content:center;border:1px solid #ffffffb8;color:white;padding:11px 17px;border-radius:6px;font-weight:700}
+.quickfacts{background:var(--navy);color:white}.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;padding:24px 0}.fact{text-align:center;border-right:1px solid #ffffff26}.fact:last-child{border:0}.fact strong{display:block;color:#e5c47d;font-size:24px}.fact span{font-size:13px;color:#e5e8ed}
+section{padding:76px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 36px}.section-head .eyebrow{color:#a77a24}.section-head h2{font-family:Georgia,serif;color:var(--navy);font-size:clamp(30px,4vw,43px);line-height:1.15;margin:10px 0}.section-head p{color:var(--muted);margin:0}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}.photo-frame{position:relative}.photo-frame img{display:block;width:100%;height:370px;object-fit:cover;border-radius:12px;box-shadow:0 16px 38px #17263824}.photo-frame:after{content:"";position:absolute;inset:12px -12px -12px 12px;border:2px solid var(--gold);border-radius:12px;z-index:-1}
+h3{color:var(--navy);font-size:24px;margin:0 0 12px}.muted{color:var(--muted)}.feature-list{list-style:none;padding:0;margin:22px 0}.feature-list li{padding:8px 0;display:flex;gap:10px}.check{color:#a77a24;font-weight:900}
+.price-section{background:var(--cream)}.price-card{max-width:760px;margin:auto;background:#fff;border:1px solid #e9dfcc;border-radius:14px;padding:34px;box-shadow:0 14px 34px #1726380c;text-align:center}.price{font-size:52px;font-family:Georgia,serif;font-weight:700;color:var(--navy);line-height:1.2}.price small{font-family:Arial,sans-serif;font-size:15px;color:var(--muted);font-weight:500}.price-card p{color:var(--muted)}.price-note{background:#f9f2e3;padding:12px 14px;border-radius:8px;color:#61491c;font-size:14px;margin:20px 0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{border:1px solid #e8eaf0;border-radius:12px;padding:24px;background:#fff}.card .icon{font-size:28px}.card h3{font-size:19px;margin:12px 0 8px}.card p{color:var(--muted);font-size:14px;margin:0}
+.payment{background:var(--navy);color:white}.payment .section-head h2{color:white}.payment .section-head p{color:#d4dbe4}.payment-box{max-width:780px;margin:auto;border:1px solid #ffffff28;background:#ffffff0a;border-radius:14px;padding:28px;text-align:center}.payment-box h3{color:#f0d18b}.payment-box p{color:#dce2e9}.payment-badge{display:inline-block;border:1px solid #d8b76b;color:#f1d38b;padding:6px 12px;border-radius:30px;font-size:12px;font-weight:800;letter-spacing:1px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}.contact-panel{background:#f7f8fa;border-radius:12px;padding:26px}.contact-row{margin:17px 0}.contact-row strong{display:block;color:var(--navy);font-size:13px;text-transform:uppercase;letter-spacing:1px}.contact-row a{color:#8b641e;font-weight:700;overflow-wrap:anywhere}
+footer{background:#0a121d;color:#d4dbe4;padding:28px 0}.footer-row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}.footer-row strong{color:#e5c47d}.small{font-size:12px;color:#aeb8c4}
+.float-wa{position:fixed;right:18px;bottom:18px;z-index:20;background:#20b85a;color:white;padding:13px 17px;border-radius:999px;font-weight:800;box-shadow:0 8px 22px #0003}
+@media(max-width:760px){nav{gap:10px}nav a:not(.nav-cta){display:none}.brand img{width:44px;height:44px}.hero{min-height:520px;background-position:58% center}.hero-content{padding:60px 0}.facts{grid-template-columns:1fr;gap:0}.fact{padding:13px;border-right:0;border-bottom:1px solid #ffffff26}.fact:last-child{border-bottom:0}.about-grid,.contact-grid{grid-template-columns:1fr}.photo-frame img{height:270px}.cards{grid-template-columns:1fr}.price-card{padding:25px 18px}section{padding:58px 0}.price{font-size:44px}}
 </style>
 </head>
 <body>
-
 <header>
-  <div class="container nav">
-    <a class="brand" href="#home">
-      <img src="logo.png" alt="Puran Bhagat Nivas logo">
-      <span>Puran Bhagat Nivas</span>
-    </a>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#features">Features</a>
-      <a href="#location">Location</a>
-      <a href="#contact">Contact</a>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><img src="assets/logo.png" alt="Puran Bhagat Nivas logo"><span>PURAN BHAGAT NIVAS<small>PREMIUM LIVING · PEACEFUL LIFESTYLE</small></span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a><a href="#rooms">Stay & Rates</a><a href="#facilities">Facilities</a><a href="#contact">Contact</a>
+      <a class="nav-cta" href="https://wa.me/919608486141?text=Hello%20Puran%20Bhagat%20Nivas%2C%20I%20want%20to%20enquire%20about%20a%20stay." target="_blank" rel="noopener">Enquire Now</a>
     </nav>
-    <div class="menu">☰</div>
   </div>
 </header>
 
 <main>
 <section class="hero" id="home">
-  <div class="container hero-inner">
-    <div class="kicker">Premium Residential Living</div>
-    <h1>Puran <span>Bhagat</span> Nivas</h1>
-    <p>A refined residential destination designed around comfort, peace and a welcoming lifestyle near Bettiah, Bihar.</p>
-    <div class="buttons">
-      <a class="btn btn-gold" href="tel:+918709012272">Call Now</a>
-      <a class="btn btn-outline" href="tel:+919608486141">Enquiry</a>
-      <a class="btn btn-outline" href="mailto:rajvivek1622@gmail.com">Email Us</a>
+  <div class="wrap"><div class="hero-content">
+    <div class="eyebrow">Welcome to Puran Bhagat Nivas</div>
+    <h1>A peaceful place<br>to feel at home.</h1>
+    <p>Enjoy a welcoming stay in Bhanachak, Majhowlia, Bettiah. Get in touch with us for room availability, booking details and a comfortable visit.</p>
+    <div class="actions">
+      <a class="btn" href="https://wa.me/919608486141?text=Hello%2C%20please%20share%20room%20availability%20and%20booking%20details." target="_blank" rel="noopener">Book on WhatsApp</a>
+      <a class="btn-outline" href="#rooms">View Nightly Rate</a>
     </div>
-    <div class="hero-card">
-      <strong>Premium Living, Peaceful Lifestyle</strong>
-      <span>Near Darbar Bhagat Village, Majhowlia, Bhanchak, near Bettiah, Bihar — 845454</span>
+  </div></div>
+</section>
+
+<div class="quickfacts"><div class="wrap facts">
+  <div class="fact"><strong>₹2,500</strong><span>Per night</span></div>
+  <div class="fact"><strong>WhatsApp</strong><span>Easy booking enquiries</span></div>
+  <div class="fact"><strong>Bettiah</strong><span>West Champaran, Bihar</span></div>
+</div></div>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="photo-frame"><img src="assets/property.jpg" alt="Exterior view of Puran Bhagat Nivas with entrance gate and landscaped boundary"></div>
+    <div>
+      <div class="eyebrow">A warm welcome</div><h2 style="font-family:Georgia,serif;font-size:clamp(30px,4vw,42px);line-height:1.15;color:var(--navy);margin:10px 0 16px">A stay with comfort and care</h2>
+      <p class="muted">Puran Bhagat Nivas welcomes guests looking for a peaceful place to stay. Contact us before your visit so we can confirm availability, check-in details and any special requirements.</p>
+      <ul class="feature-list">
+        <li><span class="check">✦</span><span>Friendly booking enquiries by phone or WhatsApp</span></li>
+        <li><span class="check">✦</span><span>Clear nightly pricing shared before confirmation</span></li>
+        <li><span class="check">✦</span><span>Food available at an additional charge; please enquire</span></li>
+      </ul>
+      <a class="btn" href="#contact">Contact Us</a>
     </div>
   </div>
 </section>
 
-<section class="about" id="about">
-  <div class="container about-grid">
-    <div class="about-copy">
-      <div class="eyebrow">Welcome Home</div>
-      <h2>A place to live with comfort and peace.</h2>
-      <p>Puran Bhagat Nivas is presented as a premium residential destination with a calm, elegant identity and a location close to Bettiah.</p>
-      <p>The website is designed to give visitors a clear first impression, easy enquiry access and essential location information.</p>
+<section class="price-section" id="rooms">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Stay & rates</div><h2>Simple, clear pricing</h2><p>Please contact us to confirm room availability and booking conditions before making a payment.</p></div>
+    <div class="price-card">
+      <div class="eyebrow">One-night stay</div>
+      <div class="price">₹2,500 <small>/ night</small></div>
+      <p>Room rate for one night. Final booking details are confirmed directly with the property.</p>
+      <div class="price-note"><strong>Food charges are separate.</strong> Please ask us for the current food menu and prices.</div>
+      <a class="btn" href="https://wa.me/919608486141?text=Hello%20Puran%20Bhagat%20Nivas%2C%20I%20would%20like%20to%20check%20room%20availability%20at%20%E2%82%B92500%20per%20night." target="_blank" rel="noopener">Check Availability</a>
     </div>
-    <div class="quote">“Premium Living, Peaceful Lifestyle”</div>
   </div>
 </section>
 
-<section id="features">
-  <div class="container">
-    <div class="section-title">
-      <div class="eyebrow">Why Puran Bhagat Nivas</div>
-      <h2>Designed for a better everyday</h2>
-      <p>A clean and premium presentation for residents, visitors and enquiries.</p>
-    </div>
+<section id="facilities">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Guest information</div><h2>Plan your visit with confidence</h2><p>We’ll help you with the information you need before your stay.</p></div>
     <div class="cards">
-      <div class="card"><div class="icon">⌂</div><h3>Residential Comfort</h3><p>A welcoming environment focused on comfortable everyday living.</p></div>
-      <div class="card"><div class="icon">✦</div><h3>Premium Identity</h3><p>An elegant gold-and-navy visual identity inspired by the Puran Bhagat Nivas logo.</p></div>
-      <div class="card"><div class="icon">⌖</div><h3>Convenient Location</h3><p>Located near Darbar Bhagat Village, Majhowlia, Bhanchak, near Bettiah, Bihar.</p></div>
+      <article class="card"><div class="icon">🏡</div><h3>Property Information</h3><p>Ask us about available rooms, check-in time and the details of your stay before booking.</p></article>
+      <article class="card"><div class="icon">🍽️</div><h3>Food Enquiry</h3><p>Food is charged separately from the nightly room rate. Contact us for menu and pricing details.</p></article>
+      <article class="card"><div class="icon">🔔</div><h3>Payment Updates</h3><p>For booking confirmations and any questions about your stay, contact the property directly.</p></article>
     </div>
   </div>
 </section>
 
-<section class="highlight">
-  <div class="container">
-    <div class="section-title">
-      <div class="eyebrow">At a Glance</div>
-      <h2>Everything you need to enquire</h2>
-      <p>Use the contact options below for property-related enquiries and information.</p>
-    </div>
-    <div class="stats">
-      <div class="stat"><b>845454</b><span>PIN Code</span></div>
-      <div class="stat"><b>24/7</b><span>Enquiry Contact</span></div>
-      <div class="stat"><b>Near Bettiah</b><span>West Champaran, Bihar</span></div>
-    </div>
-  </div>
-</section>
-
-<section class="location" id="location">
-  <div class="container">
-    <div class="section-title">
-      <div class="eyebrow">Find Us</div>
-      <h2>Our Location</h2>
-      <p>Near Darbar Bhagat Village, Majhowlia, Bhanchak, near Bettiah, Bihar — 845454.</p>
-    </div>
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head"><div class="eyebrow">Get in touch</div><h2>We’re happy to help</h2><p>Call or message us for booking enquiries, current rates and directions.</p></div>
     <div class="contact-grid">
-      <div class="map">
-        <div>
-          <h3>📍 Puran Bhagat Nivas</h3>
-          <p>Near Darbar Bhagat Village<br>Majhowlia, Bhanchak<br>Near Bettiah, Bihar — 845454</p>
-          <br>
-          <a class="btn btn-gold" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&query=Puran+Bhagat+Nivas+Near+Darbar+Bhagat+Village+Majhowlia+Bhanchak+Bettiah+Bihar+845454">Open in Google Maps</a>
-        </div>
+      <div class="contact-panel">
+        <div class="contact-row"><strong>Call</strong><a href="tel:+918709012272">+91 87090 12272</a></div>
+        <div class="contact-row"><strong>WhatsApp enquiries</strong><a href="https://wa.me/919608486141" target="_blank" rel="noopener">+91 96084 86141</a></div>
+        <div class="contact-row"><strong>Address</strong><span>Village Bhanachak, Majhowlia, Bettiah, West Champaran, Bihar – 845454, India</span></div>
+        <a class="btn" href="https://wa.me/919608486141?text=Hello%20Puran%20Bhagat%20Nivas%2C%20please%20share%20directions%20to%20your%20property." target="_blank" rel="noopener">Ask for Directions</a>
       </div>
-      <div class="contact-box" id="contact">
-        <div class="eyebrow">Get in Touch</div>
-        <h2 style="font-size:34px">Enquire today</h2>
-        <div class="contact-row"><div>📞</div><div><b>Phone</b><span>8709012272</span></div></div>
-        <div class="contact-row"><div>💬</div><div><b>Enquiry</b><span>9608486141</span></div></div>
-        <div class="contact-row"><div>✉</div><div><b>Email</b><span>rajvivek1622@gmail.com</span></div></div>
-        <div class="buttons" style="margin-top:25px">
-          <a class="btn btn-gold" href="tel:+919608486141">Enquire Now</a>
-          <a class="btn" style="background:#25D366;color:#fff" href="https://wa.me/919608486141?text=Hello%20Puran%20Bhagat%20Nivas%2C%20I%20want%20to%20make%20an%20enquiry.">WhatsApp</a>
-        </div>
+      <div class="contact-panel">
+        <h3>Before you book</h3>
+        <p class="muted">Please confirm room availability, guest capacity, check-in/check-out times, food pricing and cancellation terms with us before your booking is final.</p>
+        <p class="muted">Please confirm booking details, room availability and food charges directly with Puran Bhagat Nivas.</p>
       </div>
     </div>
   </div>
 </section>
 </main>
 
-<footer>
-  <div class="container footer-flex">
-    <div>
-      <div class="footer-brand">Puran Bhagat Nivas</div>
-      <small>Premium Living, Peaceful Lifestyle</small>
-    </div>
-    <small>© 2026 Puran Bhagat Nivas. All rights reserved.</small>
-  </div>
-</footer>
+<footer><div class="wrap footer-row">
+  <div><strong>PURAN BHAGAT NIVAS</strong><div class="small">Premium Living, Peaceful Lifestyle</div></div>
+  <div class="small">© <span id="year">2026</span> Puran Bhagat Nivas. All rights reserved.</div>
+</div></footer>
+<a class="float-wa" href="https://wa.me/919608486141?text=Hello%20Puran%20Bhagat%20Nivas%2C%20I%20have%20a%20booking%20enquiry." target="_blank" rel="noopener" aria-label="Chat on WhatsApp">☏ WhatsApp</a>
 </body>
 </html>
